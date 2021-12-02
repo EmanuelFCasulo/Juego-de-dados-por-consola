@@ -1,2 +1,9 @@
 # Juego-de-dados-por-consola
-Un juego desarrollado con mucha buena onda!
+
+Mis redes de contacto:
+
+IG: https://www.instagram.com/manucasulolp/
+
+Mail: emanuelcasulo@gmail.com
+
+Whatsapp: https://wa.me/+541158575160
