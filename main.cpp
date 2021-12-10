@@ -26,15 +26,15 @@ int main()
         rlutil :: setBackgroundColor(rlutil::BLACK);
         rlutil :: setColor(rlutil :: CYAN);
 
-        /// Para los números "aleatorios"
+        /// Para los nÃºmeros "aleatorios"
         srand(time(NULL));
 
         ///Todo: Menu principal del juego
         Mostrar_Menu();
 
-        ///OPCIÓN PARA EL MENÚ
+        ///OPCIÃ“N PARA EL MENÃš
         rlutil :: setColor(rlutil :: WHITE);
-        cout<<"Ingrese una opción: "<<endl;
+        cout<<"Ingrese una opciÃ³n: "<<endl;
         cin>>Opcion;
         rlutil :: setColor(rlutil :: CYAN);
 
@@ -49,8 +49,8 @@ int main()
             Player2 = Nombre_Jugador2();
             Limpiar_Consola();
 
-            cout<<"Seleccione el tipo de dados ver quíen empieza! "<<endl;
-            cout<<" Opción 1: 6 caras \n Opción 2: 12 caras"<<endl;
+            cout<<"Seleccione el tipo de dados ver quÃ­en empieza! "<<endl;
+            cout<<" OpciÃ³n 1: 6 caras \n OpciÃ³n 2: 12 caras"<<endl;
             cin>>Eleccion;
             Limpiar_Consola();
 
@@ -174,8 +174,8 @@ int main()
                 Num_Objetivo1 = Sumar_Vector(vDados1,2);
 
                 rlutil :: setColor(rlutil :: GREEN);
-                cout<<"RONDA N°"<<x+1<<endl;
-                cout<<PlayerMax<<" Tu número objetivo es: "<<Num_Objetivo1<<endl<<endl;
+                cout<<"RONDA NÂ°"<<x+1<<endl;
+                cout<<PlayerMax<<" Tu nÃºmero objetivo es: "<<Num_Objetivo1<<endl<<endl;
                 rlutil :: setColor(rlutil :: CYAN);
 
 
@@ -186,7 +186,7 @@ int main()
 
                 ///TODO: "INTERFAZ RONDA" PLAYER 1
                 rlutil :: setColor(rlutil :: GREEN);
-                cout<<PlayerMax<< " Su número objetivo es: "<< Num_Objetivo1<<endl;
+                cout<<PlayerMax<< " Su nÃºmero objetivo es: "<< Num_Objetivo1<<endl;
                 rlutil :: setColor(rlutil :: YELLOW);
                 cout<<"Sus dados STOCK: "<<endl;
                 Mostrar_Dados(vDadoStock1, CantDadosStock1);
@@ -197,7 +197,7 @@ int main()
                 cout<<"##############################################"<<endl<<endl;
                 rlutil :: setColor(rlutil :: CYAN);
 
-                cout<<endl<<PlayerMax<<" Seleccioná los dados que sumen su número objetivo.."<<endl<<endl;
+                cout<<endl<<PlayerMax<<" SeleccionÃ¡ los dados que sumen su nÃºmero objetivo.."<<endl<<endl;
                 cout<<"En caso de no poder lograrlo, podes pasar tu turno presionando 0"<<endl<<endl;
                 cout<<"Cantidad de dados que va a utilizar: "<<endl;
                 cin>>DadosElegidos;
@@ -264,11 +264,11 @@ int main()
                     {
                         if(CantDadosStock2 > 1)
                         {
-                            ///TODO: Tirada sin éxito y con penalización PLAYER 1
+                            ///TODO: Tirada sin Ã©xito y con penalizaciÃ³n PLAYER 1
                             Limpiar_Consola();
                             rlutil :: setColor(rlutil :: RED);
                             cout<<endl<<"NO HUBO TIRADA EXITOSA."<<endl;
-                            cout<<PlayerMin<<" TIENE MÁS DE 1 DADO, SE TE ENVIARÁ UNO DE SUS DADOS STOCK"<<endl<<endl;
+                            cout<<PlayerMin<<" TIENE MÃS DE 1 DADO, SE TE ENVIARÃ UNO DE SUS DADOS STOCK"<<endl<<endl;
                             rlutil :: setColor(rlutil :: CYAN);
                             CantDadosStock2 -= 1;
                             CantDadosStock1 ++;
@@ -281,12 +281,12 @@ int main()
                         }
                         else
                         {
-                            ///TODO: Tirada sin éxito y SIN penalización PLAYER 1
+                            ///TODO: Tirada sin Ã©xito y SIN penalizaciÃ³n PLAYER 1
                             Limpiar_Consola();
                             rlutil :: setColor(rlutil :: RED);
                             cout<<endl<<"NO HUBO TIRADA EXITOSA."<<endl;
                             rlutil :: setColor(rlutil :: GREEN);
-                            cout<<"NO HAY PENALIZACIÓN POR LA CANTIDAD DE DADOS DEL OPONENTE"<<endl<<endl;
+                            cout<<"NO HAY PENALIZACIÃ“N POR LA CANTIDAD DE DADOS DEL OPONENTE"<<endl<<endl;
                             rlutil :: setColor(rlutil :: CYAN);
                             cout<<"#######################################################################"<<endl<<endl;
                             cout<<"Tus dados STOCK actuales son "<<CantDadosStock1<<" y con un puntaje de "<<PuntosPlayer1<<" puntos."<<endl;
@@ -302,7 +302,7 @@ int main()
                 {
                     rlutil :: setColor(rlutil :: RED);
                     Limpiar_Consola();
-                    cout<<PlayerMin<<" TIENE MÁS DE 1 DADO, SE TE ENVIARÁ UNO DE SUS DADOS STOCK"<<endl<<endl;
+                    cout<<PlayerMin<<" TIENE MÃS DE 1 DADO, SE TE ENVIARÃ UNO DE SUS DADOS STOCK"<<endl<<endl;
                     rlutil :: setColor(rlutil :: CYAN);
                     CantDadosStock2 -= 1;
                     CantDadosStock1 ++;
@@ -317,8 +317,8 @@ int main()
                 Mostrar_Dados(vDados2,2);
                 Num_Objetivo2 = Sumar_Vector(vDados2,2);
                 rlutil :: setColor(rlutil :: GREEN);
-                cout<<"RONDA N°"<<x+1<<endl;
-                cout<<PlayerMin<<" Tu número objetivo es: "<<Num_Objetivo2<<endl;
+                cout<<"RONDA NÂ°"<<x+1<<endl;
+                cout<<PlayerMin<<" Tu nÃºmero objetivo es: "<<Num_Objetivo2<<endl;
 
                 rlutil :: setColor(rlutil :: YELLOW);
                 cout<<endl<< "-------------------------"<<endl;
@@ -330,7 +330,7 @@ int main()
 
                 ///TODO: "INTERFAZ RONDA PLAYER 2"
                 rlutil :: setColor(rlutil :: GREEN);
-                cout<<PlayerMin<< " Su número objetivo es: "<< Num_Objetivo2<<endl;
+                cout<<PlayerMin<< " Su nÃºmero objetivo es: "<< Num_Objetivo2<<endl;
                 rlutil :: setColor(rlutil :: YELLOW);
                 cout<<"Sus dados STOCK:"<<endl;
                 Mostrar_Dados(vDadoStock2,CantDadosStock2);
@@ -339,7 +339,7 @@ int main()
                 cout<<"     PUNTAJE: "<<PuntosPlayer2<<"    RONDA:"<<x+1<<endl;
                 cout<<"##########################################"<<endl<<endl;
                 rlutil :: setColor(rlutil :: CYAN);
-                cout<<endl<<"Seleccione los dados que acumulen su número objetivo.."<<endl<<endl;
+                cout<<endl<<"Seleccione los dados que acumulen su nÃºmero objetivo.."<<endl<<endl;
                 cout<<"En caso de no poder lograrlo, podes pasar tu turno presionando 0"<<endl<<endl;///Pasar turno
                 cout<<"Cantidad de dados que va a utilizar: "<<endl;
                 cin>>DadosElegidos;
@@ -352,10 +352,12 @@ int main()
 
                     if(Suma_Seleccionada == Num_Objetivo2)//Para tirada exitosa
                     {
+                        CantDadosStock2 -= DadosElegidos;
+                        CantDadosStock1 += DadosElegidos;
+                        
                         if(CantDadosStock2 == 0)
                         {
-                            CantDadosStock2 -= DadosElegidos;
-                            CantDadosStock1 += DadosElegidos;
+                            
 
                             ///TODO: TIRADA PERFECTA PLAYER 2
                             PuntosPlayer2= Tirada_Perfecta(PuntosRondaP2, BONIFICACION_PERFECTA);
@@ -406,11 +408,11 @@ int main()
                     {
                         if(CantDadosStock1 > 1)
                         {
-                            ///TODO: Tirada sin éxito y con penalización PLAYER 2
+                            ///TODO: Tirada sin Ã©xito y con penalizaciÃ³n PLAYER 2
                             Limpiar_Consola();
                             rlutil :: setColor(rlutil :: RED);
                             cout<<endl<<"NO HUBO TIRADA EXITOSA."<<endl;
-                            cout<<PlayerMax<<" TIENE MÁS DE 1 DADO, SE TE ENVIARÁ UNO DE SUS DADOS STOCK"<<endl<<endl;
+                            cout<<PlayerMax<<" TIENE MÃS DE 1 DADO, SE TE ENVIARÃ UNO DE SUS DADOS STOCK"<<endl<<endl;
                             rlutil :: setColor(rlutil :: CYAN);
                             CantDadosStock1 -= 1;
                             CantDadosStock2 ++;
@@ -423,12 +425,12 @@ int main()
                         }
                         else
                         {
-                            ///TODO: Tirada sin éxito y sin penalización PLAYER 2
+                            ///TODO: Tirada sin Ã©xito y sin penalizaciÃ³n PLAYER 2
                             Limpiar_Consola();
                             rlutil :: setColor(rlutil :: RED);
                             cout<<endl<<"NO HUBO TIRADA EXITOSA."<<endl;
                             rlutil :: setColor(rlutil :: GREEN);
-                            cout<<"NO HAY PENALIZACIÓN POR LA CANTIDAD DE DADOS DEL OPONENTE"<<endl<<endl;
+                            cout<<"NO HAY PENALIZACIÃ“N POR LA CANTIDAD DE DADOS DEL OPONENTE"<<endl<<endl;
                             rlutil :: setColor(rlutil :: CYAN);
                             cout<<"#######################################################################"<<endl;
                             cout<<"Tus dados STOCK actuales son "<<CantDadosStock2<<" y con un puntaje de "<<PuntosPlayer2<<" puntos."<<endl;
@@ -443,7 +445,7 @@ int main()
                 {
                     rlutil :: setColor(rlutil :: RED);
                     Limpiar_Consola();
-                    cout<<PlayerMax<<" TIENE MÁS DE 1 DADO, SE TE ENVIARÁ UNO DE SUS DADOS STOCK"<<endl<<endl;
+                    cout<<PlayerMax<<" TIENE MÃS DE 1 DADO, SE TE ENVIARÃ UNO DE SUS DADOS STOCK"<<endl<<endl;
                     rlutil :: setColor(rlutil :: CYAN);
                     CantDadosStock1 -= 1;
                     CantDadosStock2 ++;
@@ -457,7 +459,7 @@ int main()
             ///TODO: RESULTADOS FINALES
             Mostrar_Puntaje_Final(PlayerMax, PlayerMin, PuntosPlayer1, PuntosPlayer2);
 
-            ///Comparación para guardar el usuario y el puntaje máximo en caso de superar el actual.
+            ///ComparaciÃ³n para guardar el usuario y el puntaje mÃ¡ximo en caso de superar el actual.
             if(PuntosPlayer1 > PuntosPlayer2 && b == true)
             {
                 NombrePuntajeMaximo = PlayerMax;
@@ -522,7 +524,7 @@ int main()
             break;
 
         case 0:
-            cout<<"Estas seguro/a que queres abandonar el juego? \n 1- Menú Principal \n 0- Salir del juego "<<endl<<endl;
+            cout<<"Estas seguro/a que queres abandonar el juego? \n 1- MenÃº Principal \n 0- Salir del juego "<<endl<<endl;
             cin >> Exit;
             Limpiar_Consola();
             if(Exit == 0)
